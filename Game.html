@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <body background="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png"></body>
+
+<body background="https://www.bhphotovideo.com/images/images500x500/LEE_Filters_115R_Peacock_Blue_Color_Effect_688218.jpg"></body>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +10,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Game.css" />
     <script>
-    var game = prompt ("Rock, Paper, or Scissors?")
-    function getRandom(){
-        var choice = Math.floor(Math.random() * 3)
-        var choices =[
-            'Rock',
-            'Paper',
-            'Scissors'
-        ];
-        return choices[choice]
-    }
- console.log(getRandom())
+        var playerChoice = prompt("Rock, Paper, or Scissors?")
+    
+            var choice = Math.floor(Math.random() * 3 +1)
+                const choicenames = ["","Rock","Paper","Scissors"]
+        console.log(choicenames[choice])
+
+        function checkForWin() {
+            if (playerChoice === "Rock" && choice === 1) {
+                return "DRAW"
+            }
+            if (playerChoice === "Rock" && choice === 2) {
+                return "YOU LOSE"
+            }
+            if (playerChoice === "Rock" && choice === 3) {
+                return "YOU WIN"
+            }
+            if (playerChoice === "Paper" && choice === 1) {
+                return "YOU WIN"
+            }
+            if (playerChoice === "Paper" && choice === 2) {
+                return "DRAW"
+            }
+            if (playerChoice === "Paper" && choice === 3) {
+                return "YOU LOSE"
+            }
+            if (playerChoice === "Scissors" && choice === 1) {
+                return "YOU LOSE"
+            }
+            if (playerChoice === "Scissors" && choice === 2) {
+                return "YOU WIN"
+            }
+            if (playerChoice === "Scissors" && choice === 3) {
+                return "DRAW"
+            }
+}
+        checkForWin()
+        alert("Computer has chosen " + (choicenames[choice]) + ".   " + checkForWin());
+       
 
     </script>
 
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
