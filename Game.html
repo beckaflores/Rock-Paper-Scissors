@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body background="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png"></body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock, Paper, Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Game.css" />
+    <script>
+    var game = prompt ("Rock, Paper, or Scissors?")
+    function getRandom(){
+        var choice = Math.floor(Math.random() * 3)
+        var choices =[
+            'Rock',
+            'Paper',
+            'Scissors'
+        ];
+        return choices[choice]
+    }
+ console.log(getRandom())
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
